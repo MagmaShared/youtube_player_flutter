@@ -201,6 +201,7 @@ class _BottomBarState extends State<BottomBar> {
               cardColor: Colors.black,
             ),
             child: PopupMenuButton<PlaybackRate>(
+              color: Theme.of(context).brightness == Brightness.light ? Colors.white : Colors.black,
               onSelected: controller.setPlaybackRate,
               child: Padding(
                 padding: EdgeInsets.fromLTRB(8.0, 8.0, 0.0, 8.0),
